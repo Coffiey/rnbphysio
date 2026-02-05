@@ -1,58 +1,53 @@
 import React from "react";
 import Image from "next/image";
-
-const CL = "w-full h-[30vh] bg-[rgba(0,0,0,0.6)] relative";
-const TXT = "w-full h-[50vh] bg-[#6bf8da] relative";
-
-// <div className={TXT}><About /></div>
-// <div className={CL}><h1 className="text-transparent"></h1></div>
+import Overlay from "./Overlay";
 
 const About = () => {
   return (
     <div
       id="aboutUs"
-      className="relative z-0 w-full bg-[url(/images/istockphoto-talking.jpg)] bg-cover bg-center flex flex-col py-[120px] items-center h-screen"
+      className="relative z-0 w-full bg-[url(/images/istockphoto-talking.jpg)] bg-cover bg-center flex flex-col py-5 md:py-[120px] items-center min-h-screen"
     >
-      <div className="absolute w-[100%] h-[100%] bg-[rgba(255,120,96,0.7)] z-20 top-0"></div>
-      <div className="relative z-30">
-        <Image
-          src="logo/RNB_Text_Centre_Aligned.png"
-          width={500}
-          height={200}
-          alt="logoText"
-          unoptimized
-        />
-      </div>
-      <div className="flex relative z-30">
-        <div className="flex flex-col items-center w-[50%] mt-20">
-          <h1 className="font-bold text-5xl text-[#036574]">About Us</h1>
-          <p className="mx-15 text-2xl max-w-[995%] text-center ">
-            RNB Physio provides expert neuro physiotherapy and rehabilitation
-            services to support individuals living with neurological conditions
-            and chronic illness.
+      <Overlay />
+      <div className="flex flex-col md:flex-row relative z-30">
+        <div className="flex flex-col items-center md:justify-center md:w-[60%] mt-5 md:mt-20">
+          <h1 className="font-bold text-3xl md:text-5xl text-[#ff7860]">About Us</h1>
+          <p className="px-15 text-xl w-full md:text-2xl md:max-w-[95%] text-center text-white">
+            We provide our services with a compassionate, client centred approach, utilising telehealth to be accessible for all.
           </p>
-          <p className="m-15 text-3xl max-w-[995%] text-center">
-            RNB Physio has a specialised focus on,{" "}
-            <span className="text-[#036574] font-extrabold">
+          <p className="hidden md:block m-15 text-3xl max-w-[70%] text-center text-white">
+            RNB Physio has a specialised focus on{" "}
+            <span className="text-[#ff7860] font-bold">
               long COVID, ME and other complex disabilities.
             </span>{" "}
-            With a compassionate, client centred approach, we provide our
-            services mainly through telehealth to be accessible for all. Our
+           Our
             goal is to support your journey to improved mobility, daily
             functioning and independence through personalised treatment plans,
             evidence-based practices, and a commitment to your long-term
             well-being.
           </p>
         </div>
-        <div className="m-10 overflow-hidden mt-20">
+        <div className="overflow-hidden md:mx-10 p-6 md:p-0 md:mt-20 w-full md:w-[40%] justify-center flex">
           <Image
-            src="images/pexels-thisisengineering.jpg"
-            width={795}
-            height={530}
+            src="images/about-us.jpg"
+            width={600}
+            height={600}
             alt="adding cast to leg"
-            className="rounded-3xl"
+            className="rounded-3xl my-auto"
             unoptimized
           />
+        </div>
+        <div className="md:hidden">
+           <p className="my-5 mx-8  text-lg md:m-15 md:text-3xl max-w-[95%] text-center text-white">
+            RNB Physio has a specialised focus on,{" "}
+            <span className="text-[#ff7860] font-bold">
+              long COVID, ME and other complex disabilities.
+            </span>{" "}
+            Our goal is to support your journey to improved mobility, daily
+            functioning and independence through personalised treatment plans,
+            evidence-based practices, and a commitment to your long-term
+            well-being.
+          </p>
         </div>
       </div>
     </div>

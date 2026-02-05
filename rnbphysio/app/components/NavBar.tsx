@@ -2,12 +2,12 @@
 
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import Scroll from "./Scroll";
 import Link from "next/link";
+import NavScroll from "./NavScroll";
 
 const Logo = () => {
   return (
-    <div className="w-150 h-[100%] flex items-center justify-start mx-4">
+    <div className="hidden md:flex w-150 h-[100%] items-center justify-start mx-4">
       <Image
         src="logo/RNB_Logo_Right_Aligned.png"
         height={75}
@@ -19,41 +19,38 @@ const Logo = () => {
   );
 };
 
-const BookNow = () => {
-  return (
-    <div className="h-[100%] flex items-center hover:text-gray-200 hover:scale-120 cursor-pointer">
-      <Link
-        target="__blank"
-        href="https://calendly.com/rnbphysio/initial_assessment"
-      >
-        Book Now
-      </Link>
-    </div>
-  );
-};
+// const BookNow = () => {
+//   return (
+//     <div className="hidden md:flex h-[100%] items-center hover:text-[#036574] hover:scale-120 cursor-pointer">
+//       <Link
+//         target="__blank"
+//         href="https://calendly.com/rnbphysio/initial_assessment"
+//       >
+//         Book Now
+//       </Link>
+//     </div>
+//   );
+// };
 
 const NavBar = () => {
-  const [opacity, setOpacity] = useState(0);
+  const [visible, setVisible] = useState(false);
   
-  useEffect(() => {
+    useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
-      const fadeDistance = 900;
-      const newOpacity = Math.min(scrollY / fadeDistance, 1);
-      setOpacity(newOpacity);
+      setVisible(scrollY > 550);
     };
+
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
+//bg-[#e9371bff]
   return (
     <div
-      style={{ opacity }}
-      className="bg-[#e9371bff] fixed z-50 w-full h-[100px] flex shadow-2xl justify-between top-0"
+      className={`bg-gray-200 fixed z-50 bottom-0 md:top-0 w-full h-[100px] flex shadow-2xl justify-center md:justify-between transition-opacity duration-800 ease-linear ${visible ? "md:opacity-100" : "md:opacity-0"}`}
     >
       <Logo />
-      <BookNow />
-      <Scroll />
+      <NavScroll />
     </div>
   );
 };
