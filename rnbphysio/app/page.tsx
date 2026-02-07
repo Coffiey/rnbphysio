@@ -14,7 +14,7 @@ const TXT = 'w-full h-[50vh] bg-[#6bf8da] relative'
 const WindowDiv = () => {
   return  <div className={CL}><h1 className="text-transparent"></h1></div>
 }
-
+// rnb physio //
 const page = () => {
   return (
 

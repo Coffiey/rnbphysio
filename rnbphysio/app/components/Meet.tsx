@@ -18,22 +18,25 @@ const Meet = () => {
             <p className="mx-15 md:text-sm lg:text-lg xl:text-xl text-center">
               Raewyn is a senior physiotherapist with over 13 years’ experience
               in neuro rehabilitation. Raewyn has gained knowledge and expertise
-              through her work in both New Zealand and the UK.
+              through her work in both New Zealand and the UK. Raewyn attended
+              her initial vestibular training in 2020, then went on to complete
+              her advanced training in May 2024.
             </p>
             <p className="mx-15 md:text-sm lg:text-lg xl:text-xl text-center ">
-              Since the pandemic Raewyn has been heavily involved in treating
-              clients with long COVID as well as providing education and
-              awareness to health care professionals and others regarding
-              management of fatigue and other long COVID symptoms. Through this
-              work, Raewyn has expanded her passion to encompass other complex
-              conditions including ME/CFS, EDS, and POTS.
+              Since the pandemic Raewyn has been involved in treating clients
+              with long COVID as well as providing education and awareness
+              regarding management of fatigue and other long COVID symptoms.
+              Through this work, Raewyn has expanded her passion to encompass
+              other complex conditions including ME/CFS, EDS, and POTS.
             </p>
             <p className="mx-15 md:text-sm lg:text-lg xl:text-xl  text-center ">
-              Raewyn established RNB Physio to provide an accessible service for
-              treatment and education that takes into consideration the barriers
-              of fatigue that encompass many of these conditions. This service
-              allows for people to attend consultations within the confines of
-              their own home to conserve energy levels and lower stress.
+              This is a specialized, exercise-based, and evidence-supported
+              program designed to reduce vertigo, dizziness, gaze instability,
+              and imbalance caused by inner ear or central nervous system
+              dysfunction. Treatment can consist of repositioning manoeuvres,
+              gaze stabilization exercises, habituation exercises and balance
+              and gait retraining. This therapy is not suitable for telehealth,
+              and so is only available for those living in the Manawatu.
             </p>
           </div>
         </div>
@@ -48,27 +51,30 @@ const Meet = () => {
           />
         </div>
         <div className="flex-col gap-7 flex md:hidden text-white mb-10">
-            <p className="mx-5 md:text-sm lg:text-lg xl:text-xl text-center">
-              Raewyn is a senior physiotherapist with over 13 years’ experience
-              in neuro rehabilitation. Raewyn has gained knowledge and expertise
-              through her work in both New Zealand and the UK.
-            </p>
-            <p className="mx-5 md:text-sm lg:text-lg xl:text-xl text-center ">
-              Since the pandemic Raewyn has been heavily involved in treating
-              clients with long COVID as well as providing education and
-              awareness to health care professionals and others regarding
-              management of fatigue and other long COVID symptoms. Through this
-              work, Raewyn has expanded her passion to encompass other complex
-              conditions including ME/CFS, EDS, and POTS.
-            </p>
-            <p className="mx-5 md:text-sm lg:text-lg xl:text-xl  text-center ">
-              Raewyn established RNB Physio to provide an accessible service for
-              treatment and education that takes into consideration the barriers
-              of fatigue that encompass many of these conditions. This service
-              allows for people to attend consultations within the confines of
-              their own home to conserve energy levels and lower stress.
-            </p>
-          </div>
+          <p className="mx-5 md:text-sm lg:text-lg xl:text-xl text-center">
+            Raewyn is a senior physiotherapist with over 13 years' experience in
+            neuro rehabilitation. Raewyn has gained knowledge and expertise
+            through her work in both New Zealand and the UK. Raewyn attended her
+            initial vestibular training in 2020, then went on to complete her
+            advanced training in May 2024.
+          </p>
+          <p className="mx-5 md:text-sm lg:text-lg xl:text-xl text-center ">
+            Since the pandemic Raewyn has been involved in treating clients with
+            long COVID as well as providing education and awareness regarding
+            management of fatigue and other long COVID symptoms. Through this
+            work, Raewyn has expanded her passion to encompass other complex
+            conditions including ME/CFS, EDS, and POTS.
+          </p>
+          <p className="mx-5 md:text-sm lg:text-lg xl:text-xl  text-center ">
+            This is 1a specialized, exercise-based, and evidence-supported
+            program designed to reduce vertigo, dizziness, gaze instability, and
+            imbalance caused by inner ear or central nervous system dysfunction.
+            Treatment can consist of repositioning manoeuvres, gaze
+            stabilization exercises, habituation exercises and balance and gait
+            retraining. This therapy is not suitable for telehealth, and so is
+            only available for those living in the Manawatu.
+          </p>
+        </div>
       </div>
     </div>
   );

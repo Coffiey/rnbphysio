@@ -23,7 +23,7 @@ const TeliHeath = () => {
               <h1 className="text-5xl text-[#ff7860] font-semibold">
                 Telehealth
               </h1>
-              <p className="text-xl p-3">Video calls using Google meet</p>
+              <p className="text-md p-3">Video calls using Google meet</p>
             </div>
             <div className="w-full flex-col items-center gap-7 hidden md:flex">
               <p className="max-w-[90%] lg:text-2xl xl:text-3xl text-center">
@@ -71,12 +71,12 @@ const TeliHeath = () => {
                 Home visits
               </h1>
               {/* <p className="md:hidden block text-lg"> */}
-              <p className="md:text-xs">
+              <p className="md:text-md">
                 Manawatu | Whanganui | Horowhenua
               </p>
               {/* <p className="md:hidden block text-xs"> */}
               <p className="md:text-xs">
-                (Horowhenua has additional travel costs)
+                additional travel costs may apply*
               </p>
             </div>
             {/* body */}
