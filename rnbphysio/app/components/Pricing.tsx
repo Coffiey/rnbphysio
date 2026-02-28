@@ -25,7 +25,7 @@ const Pricing = () => {
                   </p>
                 <p className="flex justify-between"><span>1 hr Inital assessment:</span> <span>$165</span></p>
                 <p className="flex justify-between"><span>1 hr Follow up:</span>        <span>$127</span></p>
-                <p className="text-xs text-center">Shoter sessions available on request</p>
+                <p className="text-xs text-center">Shorter sessions available on request</p>
               {/* </div> */}
 
               {/* <div className="text-lg m-5 p-5 w-[400px]"> */}
@@ -33,7 +33,7 @@ const Pricing = () => {
                   ACC 
                 </p>
                 <p className="flex justify-between"><span>40 min Inital assessment:</span> <span>$58</span></p>
-                <p className="flex justify-between"><span>30 min Follow up:</span> <span>$127</span></p>
+                <p className="flex justify-between"><span>30 min Follow up:</span> <span>$24</span></p>
               </div>
 
               {/* book now */}
