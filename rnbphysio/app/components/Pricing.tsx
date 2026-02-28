@@ -19,21 +19,27 @@ const Pricing = () => {
               className="relative w-full z-0 flex flex-col items-center p-10"
             >
               <div className="text-lg m-5 p-5 w-[400px] bg-[rgba(3,101,116,0.8)] rounded">
-              {/* <div className="text-lg m-5 p-5 w-[400px] bg-[#ff7860] rounded"> */}
-                <p className="text-center text-2xl">
-                  Private
-                  </p>
-                <p className="flex justify-between"><span>1 hr Inital assessment:</span> <span>$165</span></p>
-                <p className="flex justify-between"><span>1 hr Follow up:</span>        <span>$127</span></p>
-                <p className="text-xs text-center">Shorter sessions available on request</p>
-              {/* </div> */}
-
-              {/* <div className="text-lg m-5 p-5 w-[400px]"> */}
-                <p className="text-center text-2xl mt-8">
-                  ACC 
+                {/* <div className="text-lg m-5 p-5 w-[400px] bg-[#ff7860] rounded"> */}
+                <p className="text-center text-2xl">Private</p>
+                <p className="flex justify-between">
+                  <span>1 hr Initial assessment:</span> <span>$165</span>
                 </p>
-                <p className="flex justify-between"><span>40 min Inital assessment:</span> <span>$58</span></p>
-                <p className="flex justify-between"><span>30 min Follow up:</span> <span>$24</span></p>
+                <p className="flex justify-between">
+                  <span>1 hr Follow up:</span> <span>$127</span>
+                </p>
+                <p className="text-xs text-center">
+                  Shorter sessions available on request
+                </p>
+                {/* </div> */}
+
+                {/* <div className="text-lg m-5 p-5 w-[400px]"> */}
+                <p className="text-center text-2xl mt-8">ACC</p>
+                <p className="flex justify-between">
+                  <span>40 min Initial assessment:</span> <span>$58</span>
+                </p>
+                <p className="flex justify-between">
+                  <span>30 min Follow up:</span> <span>$24</span>
+                </p>
               </div>
 
               {/* book now */}
@@ -73,20 +79,8 @@ const Pricing = () => {
             </p>
           </div>
         </div>
-
-        {/* this is the smarphone view */}
-        <div className="overflow-hidden md:mx-10 p-6 md:p-0 md:mt-20 w-full md:w-[45%] justify-center flex">
-          <Image
-            src="images/pexels-olia-danilevich-9004780.jpg"
-            width={600}
-            height={600}
-            alt="adding cast to leg"
-            className="rounded-3xl my-auto"
-            unoptimized
-          />
-        </div>
-        <div className="md:hidden flex flex-col items-center w-full pb-[120px]">
-          <div className="text-center max-w-xl flex flex-col mt-20 md:hidden text-white">
+        <div className="md:hidden flex flex-col items-center w-full pb-5">
+          <div className="text-center max-w-xl flex flex-col mt-5 md:hidden text-white">
             <h2 className="text-2xl font-bold mb-4 text-[#ff7860]">
               Home Visits
             </h2>
@@ -97,6 +91,18 @@ const Pricing = () => {
               will be waived. Base: Roslyn, Palmerston North.
             </p>
           </div>
+        </div>
+
+        {/* this is the smarphone view */}
+        <div className="overflow-hidden md:mx-10 p-6 md:p-0 md:mt-20 w-full md:w-[45%] justify-center mb-5 flex">
+          <Image
+            src="images/pexels-olia-danilevich-9004780.jpg"
+            width={600}
+            height={600}
+            alt="adding cast to leg"
+            className="rounded-3xl my-auto"
+            unoptimized
+          />
         </div>
       </div>
     </div>
